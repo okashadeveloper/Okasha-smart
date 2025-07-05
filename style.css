@@ -1,0 +1,1144 @@
+* {
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 📢 Top Notification Bar */
+.top-bar {
+  text-align: center;
+  padding: 5px 10px;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar .promo-text {
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.top-bar a {
+  text-decoration: none;
+}
+
+.top-bar .promo-text:hover {
+  color: rgb(133, 103, 166);
+  /* Hover color */
+}
+
+
+/* ☎️Contact + Social Icons Bar */
+.contact-bar {
+  background: rgb(133, 103, 166);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 14px;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.contact-info span {
+  margin-right: 15px;
+  background: rgb(133, 103, 166);
+}
+
+.social-icons a {
+  margin-left: 10px;
+  background: rgb(133, 103, 166);
+  
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  
+}
+
+/* 🏢 Main Header with Logo, Search & Icons */
+.main-header {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.search-box {
+  flex: 1;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 40px 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.search-button {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 20px;
+  background-color: black;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.smart-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s;
+  justify-content: space-evenly;
+}
+
+.smart-btn:hover {
+  background-color: rgb(133, 103, 166);
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: rgb(133, 103, 166);
+}
+
+
+/*yaha sey hiden nav st hay*/
+
+.navbar {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 5px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 20px;
+  width: 1000px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-top: 2px solid rgb(133, 103, 166);
+  z-index: 100;
+  display: none;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu-item:hover .mega-menu {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  min-width: 160px;
+}
+
+.column h4 {
+  margin-top: 0;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.column a {
+  display: block;
+  color: #555;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 5px 0;
+  transition: color 0.3s;
+}
+
+/*yaha sey over play walay card st*/
+
+
+.product-section {
+  padding: 40px 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.product-card {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 10px rgba(164, 118, 186, 0.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.1);
+  color: #000;
+  transition: background 0.3s ease;
+}
+
+.product-card:hover .card-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+
+
+
+.order-now {
+  margin-left: 50px;
+}
+
+.hot-deals {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+
+  padding-right: 10px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.order-now h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.order-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-btn:hover {
+  background: rgb(133, 103, 166);
+}
+
+/*yaha sey dsura st howa overplay*/
+
+
+.product-grid {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 600px;
+}
+
+.card {
+  position: relative;
+  background: #f9f9f9;
+  width: 350px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow:  4px 4px  grey ;
+  transform: scale(102%);
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+}
+
+.details {
+  padding: 10px 0;
+  background-color: #f9f9f9;
+
+}
+
+.brand {
+  color: #aaa;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.price del {
+  color: #888;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.circle-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.circle-btn:hover {
+  background: rgb(133, 103, 166);
+}
+
+.order-now1 {
+  margin-right: 1000px;
+  margin-top: 40px;
+}
+
+.hot-deals1 {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+  padding-right: 10px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.order-now1 h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.order-btn1 {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-btn1:hover {
+  background: rgb(133, 103, 166);
+}
+
+/*yaha sey testimonals ka kaam shru*/
+
+
+.testimonials {
+  padding: 50px 70px;
+  margin: auto;
+}
+
+.testimonials h5 {
+  color: #aaa;
+  font-size: 12px;
+  letter-spacing: 1px;
+
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.testimonial {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.testimonial img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+.testimonial .content {
+  flex: 1;
+}
+
+.testimonial .name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testimonial strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.testimonial p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.rating i {
+  color: yellow;
+  margin-right: 2px;
+}
+
+/*yaha sey shop ka kaam st hay */
+
+.why-shop {
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  padding: 50px 60px;
+}
+
+.section-title span {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.h2 {
+  color: rgb(133, 103, 166)
+}
+
+.section-title span::after {
+  height: 2px;
+  width: 60px;
+  background: rgb(133, 103, 166);
+  position: absolute;
+  margin-left: 10px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  min-width: 280px;
+  padding: 15px;
+}
+
+.feature-card img {
+  width: 80px;
+  height: auto;
+}
+
+.feature-card .sub-heading {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: green;
+  position: relative;
+}
+
+.feature-card .sub-heading::after {
+  content: "";
+  height: 2px;
+  width: 60px;
+  background: rgb(133, 103, 166);
+  ;
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0;
+  color: rgb(133, 103, 166);
+}
+
+.feature-card p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+.feature-card a {
+  color: rgb(133, 103, 166);
+  ;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Trustpilot Button */
+.trustpilot-container {
+  display: flex;
+  justify-content: center;
+}
+
+.trustpilot-btn {
+  color: white;
+  border: 2px solid green;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.trustpilot-btn:hover{
+  transform: scale(102%);
+}
+
+/*yaha sey video kaam st howa*/
+.video-preview-section {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio */
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  /* Disable interaction */
+}
+
+/*yaha sey blog kaam st hay*/
+
+
+.blog-section {
+  margin: auto;
+  padding: 0 20px;
+}
+
+.blog-section h5 {
+  color: green;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.blog-section h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: rgb(133, 103, 166);
+}
+
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.blog-card {
+  flex: 1 1 calc(33.333% - 20px);
+  background: #f8f8f8;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.blog-card img:hover{
+  transform: scale(104%);
+}
+.blog-card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.blog-date {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 8px;
+  border-bottom: 2px solid rgb(133, 103, 166);
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+.blog-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.4;
+
+}
+
+.blog-desc {
+  font-size: 14px;
+  color: white;
+  flex-grow: 1;
+}
+
+.read-more {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  color: rgb(133, 103, 166);
+
+}
+
+@media screen and (max-width: 992px) {
+  .blog-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog-card {
+    flex: 1 1 100%;
+  }
+}
+
+/*yaha sey form kaa kaam st howa  */
+
+
+.newsletter-wrapper {
+  background: black;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter-text {
+  flex: 1 1 400px;
+}
+
+.newsletter-text h5 {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: green;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.newsletter-text h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.newsletter-text p {
+  color: rgb(133, 103, 166);
+  font-size: 15px;
+}
+
+.newsletter-form {
+  flex: 1 1 400px;
+  display: flex;
+  max-width: 500px;
+}
+
+.newsletter-form input[type="email"] {
+  flex-grow: 1;
+  padding: 15px 20px;
+  font-size: 15px;
+
+  background: #fff;
+
+}
+
+.newsletter-form button {
+  padding: 15px 30px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.newsletter-form button:hover {
+  background-color: rgb(133, 103, 166);
+
+}
+
+@media (max-width: 768px) {
+  .newsletter-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter-form {
+    width: 100%;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    border-radius: 30px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form input[type="email"] {
+    border-radius: 30px;
+  }
+
+  .newsletter-form button {
+    border-radius: 30px;
+  }
+}
+
+/*yaha sey footer st howa */
+
+.footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 60px 40px;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+  background-color: #333333;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 200px;
+  background-color: #333333;
+}
+
+.logo1 {
+  height: 100px;
+  border-radius: 50px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: #333333;
+  color: green;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333333;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: 15px;
+  cursor: default;
+  background-color: #333333;
+}
+
+.brand-info .logo {
+  width: 140px;
+  margin-bottom: 20px;
+  background-color: #333333;
+}
+
+.brand-info p {
+  font-size: 15px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+}
+
+.brand-info p i {
+  margin-right: 10px;
+  font-size: 16px;
+  background-color: #333333;
+}
+
+.social-icons1 {
+  margin-top: 20px;
+  background-color: #333333;
+}
+
+.social-icons i {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  background-color: #333333;
+}
+
+.social-icons i:hover {
+  color: rgb(133, 103, 166);
+  background-color: #333333;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    background-color: #333333;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+/*yaha sey wifi.html ka kaam st howa hay*/
+
+
+
+    .header1 {
+     background-color: #333333;
+      color: white;
+      text-align: center;
+      padding: 40px 0px 20px;
+      
+    }
+
+    .header1 h1 {
+      font-size: 40px;
+      color: green;
+      background-color: #333333;
+    }
+
+    .breadcrumbs1 {
+      font-size: 14px;
+      background-color:#333333;
+    }
+    .breadcrumbs1 a:hover{
+      color:  rgb(133, 103, 166);
+    }
+
+    .breadcrumbs1 a {
+      color: white;
+      text-decoration: none;
+      margin: 0 5px;
+      background-color: #333333;
+    }
+
+    .main-container1 {
+      display: flex;
+      padding: 30px;
+
+    }
+
+    .sidebar1 {
+      width: 280px;
+      margin-right: 30px;
+     
+    }
+
+    .search-box1 {
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .search-box1 input {
+      width: 100%;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .trend-box1 {
+      background-color: #333333; /* colorful section */
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      
+    }
+
+    .content-area1 {
+      flex: 1;
+    }
+
+    .page-title1 {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .toolbar1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .toolbar select1,
+    .toolbar button1 {
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .display-options1 {
+      display: flex;
+      gap: 10px;
+    }
+
+    .display-options1 button {
+      width: 30px;
+      height: 30px;
+      background: #f1f1f1;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .display-options1 .active {
+      background-color: white;
+      color: black;
+    }
+
+
+    
+
+
+
+
+
+
+
+
+    /*
+
+     rgb(133, 103, 166)
+     
+    <div class="header1">
+    <h1>Collection</h1>
+    <div class="breadcrumbs1">
+      <a href="./index.html">Home</a> / <a href="./wifi.html">Wifi Products</a>
+    </div>
+  </div>
+
+  <div class="main-container1">
+    <div class="sidebar1">
+      <div class="search-box1">
+        <input type="text" placeholder="Search For Product , ..." />
+      </div>
+
+      <div class="trend-box1">
+        <h3>Colorful Trend Box</h3>
+        <p>This can be used to highlight promotions or new products.</p>
+      </div>
+    </div>
+
+    <div class="content-area1">
+      <h2 class="page-title1">Wifi Products</h2>
+
+      <div class="toolbar1">
+        <div class="display-options1">
+          <span>Displayed As</span>
+          <button class="active">I</button>
+          <button class="active">II</button>
+          <button class="active">III</button>
+          <button class="active">IIII</button>
+          <button class="active">IIIII</button>
+          <button class="active">VI</button>
+          <button class="active">VII</button>
+        </div>
+
+        <div>
+          <label>Products Per Page</label>
+          <select>
+            <option>6</option>
+            <option>12</option>
+            <option>18</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Sort by</label>
+          <select>
+            <option>Featured</option>
+            <option>Price Low to High</option>
+            <option>Newest</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  
