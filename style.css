@@ -335,11 +335,10 @@
 
 .product-grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   padding: 20px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: 600px;
 }
 
 .card {
@@ -347,12 +346,14 @@
   background: #f9f9f9;
   width: 350px;
   padding: 15px;
+  border-radius: 20px;
   transition: all 0.3s ease;
+  flex: 1 1 300px;
 }
 
 .card:hover {
-  box-shadow:  4px 4px  grey ;
-  transform: scale(102%);
+  box-shadow: 4px 4px grey;
+  transform: scale(1.02);
 }
 
 .product-img {
@@ -366,7 +367,6 @@
 .details {
   padding: 10px 0;
   background-color: #f9f9f9;
-
 }
 
 .brand {
@@ -394,28 +394,6 @@ h3 {
   margin-left: 8px;
 }
 
-.badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-
-  color: #fff;
-  font-size: 12px;
-  padding: 3px 8px;
-  border-radius: 6px;
-}
-
-.discount {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-
-  color: #fff;
-  font-size: 12px;
-  padding: 3px 8px;
-  border-radius: 6px;
-}
-
 .circle-btn {
   position: absolute;
   bottom: 15px;
@@ -434,6 +412,34 @@ h3 {
 .circle-btn:hover {
   background: rgb(133, 103, 166);
 }
+
+/* ✅ Responsive Cards */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .circle-btn {
+    bottom: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
 
 .order-now1 {
   margin-right: 1000px;
@@ -1040,116 +1046,70 @@ h3 {
     }
 
     .content-area1 {
-      flex: 1;
-    }
+  flex: 10;
+  padding: 20px;
+  height: auto; /* ❌ Fixed height removed */
+}
 
-    .page-title1 {
-      font-size: 40px;
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
+.page-title1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-    .toolbar1 {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
+.toolbar1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
 
-    .toolbar select1,
-    .toolbar button1 {
-      padding: 10px;
-      font-size: 14px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+.toolbar1 > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-    .display-options1 {
-      display: flex;
-      gap: 10px;
-    }
+.toolbar1 label {
+  font-weight: 500;
+}
 
-    .display-options1 button {
-      width: 30px;
-      height: 30px;
-      background: #f1f1f1;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      cursor: pointer;
-    }
+.display-options1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-    .display-options1 .active {
-      background-color: white;
-      color: black;
-    }
+.display-options1 button {
+  width: 30px;
+  height: 30px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
 
+.display-options1 .active {
+  background-color: white;
+  color: black;
+}
 
-    
+/* ✅ Responsive fix for toolbar */
+@media (max-width: 768px) {
+  .toolbar1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .toolbar1 > div {
+    width: 100%;
+    justify-content: space-between;
+  }
 
-
-
-
-
-
-
-    /*
-
-     rgb(133, 103, 166)
-     
-    <div class="header1">
-    <h1>Collection</h1>
-    <div class="breadcrumbs1">
-      <a href="./index.html">Home</a> / <a href="./wifi.html">Wifi Products</a>
-    </div>
-  </div>
-
-  <div class="main-container1">
-    <div class="sidebar1">
-      <div class="search-box1">
-        <input type="text" placeholder="Search For Product , ..." />
-      </div>
-
-      <div class="trend-box1">
-        <h3>Colorful Trend Box</h3>
-        <p>This can be used to highlight promotions or new products.</p>
-      </div>
-    </div>
-
-    <div class="content-area1">
-      <h2 class="page-title1">Wifi Products</h2>
-
-      <div class="toolbar1">
-        <div class="display-options1">
-          <span>Displayed As</span>
-          <button class="active">I</button>
-          <button class="active">II</button>
-          <button class="active">III</button>
-          <button class="active">IIII</button>
-          <button class="active">IIIII</button>
-          <button class="active">VI</button>
-          <button class="active">VII</button>
-        </div>
-
-        <div>
-          <label>Products Per Page</label>
-          <select>
-            <option>6</option>
-            <option>12</option>
-            <option>18</option>
-          </select>
-        </div>
-
-        <div>
-          <label>Sort by</label>
-          <select>
-            <option>Featured</option>
-            <option>Price Low to High</option>
-            <option>Newest</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+  .page-title1 {
+    font-size: 28px;
+  }
+}
